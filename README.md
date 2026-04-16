@@ -1,21 +1,30 @@
-<<<<<<< HEAD
-# React + Vite
+<h1>Institute ERP Admin Panel (Frontend)<h1>
+<h3>A responsive Admin Panel built with React.js for managing institute operations including students, fees, library, study materials, and announcements.<h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>#Features<h2> <br>
+Login Authentication (Role-Based) <br>
+Dashboard Overview <br>
+Student Management <br>
+Fee Collection System <br>
+Library Management <br>
+Study Material (PDF View & Download) <br>
+Announcement System <br> 
+Document Upload & Tracking <br>
+Fully Responsive UI <br>
+API Integration <br>
 
-Currently, two official plugins are available:
+<h2>#Demo Credentials<h2> <br>
+Head : head@demo || 123456 <br>
+Admin : admin@demo || 123456 <br>
+Staff : staff@demo || 123456 <br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>#Tech Stack<h2> <br>
+React.js <br>
+JavaScript <br>
+Bootstrap <br>
+React Router <br>
+REST API Integration <br>
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Institute-admin-demo
-A full-stack ERP admin panel built for managing students, courses, fees, and library system with role-based access.
->>>>>>> fbf811772711e784828ec58fecde76fb460d1bf2
+<h2>#Author<h2>
+<h4>Divyansh Pal<h4>
+GitHub: https://github.com/divyansh-connect
