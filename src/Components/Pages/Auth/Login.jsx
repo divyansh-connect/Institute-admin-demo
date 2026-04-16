@@ -66,7 +66,7 @@ const Login = () => {
         </div>
 
         {/* 🟢 RIGHT SIDE LOGIN */}
-        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center bg-light">
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column bg-light">
           <div
             className="card shadow-lg border-0 p-4"
             style={{
@@ -143,6 +143,17 @@ const Login = () => {
             <p className="text-center text-muted small mt-4 mb-0">
               © {new Date().getFullYear()} Act Computer Institute
             </p>
+          </div>
+          {/* Demo Credentials Box */}
+
+          <div className="card mt-2 p-2 border rounded small text-muted w-75">
+            <strong>Demo:</strong>
+            <br />
+            Head: head@demo / 123456
+            <br />
+            Admin: admin@demo / 123456
+            <br />
+            Staff: staff@demo / 123456
           </div>
         </div>
       </div>
