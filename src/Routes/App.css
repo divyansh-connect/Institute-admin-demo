@@ -1,0 +1,245 @@
+.admin-wrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-area {
+  flex-grow: 1;
+  overflow-x: auto;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.sidebar {
+  min-width: 230px;
+  min-height: 100vh;
+  /* background-color: #0b1c3d; */
+  transition: all 0.3s ease;
+}
+
+.sidebar-content {
+  width: 230px;
+  background: #1e293b;
+  min-height: 100vh;
+}
+
+/* Sidebar links */
+.sidebar .nav-link {
+  transition: 0.1s; 
+}
+
+.sidebar .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.seatGrid-div{
+  height: 70px;
+}
+
+/* Skeleton Seat */
+.seat-skeleton {
+  height: 50px;
+  border-radius: 8px;
+  background: #e0e0e0;
+  animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% {opacity: 0.6; }
+}
+
+.seatGrid-div button:hover{
+  font-size: 20px;
+}
+
+/* Error Pages */
+.error-bg {
+  background-color: #f4f6f9;   /* light dashboard bg */
+}
+
+/* Card Styling */
+.error-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* 404 Code - Admin Primary Accent */
+.error-code {
+  color: #0d6efd;   /* Bootstrap primary */
+  font-size: 6rem;
+}
+
+/* Optional subtle muted text */
+.error-card p {
+  color: #6c757d;
+}
+
+/* Libary Student  */
+
+.liberaystudent-title {
+  font-weight: 600;
+  border-left: 4px solid #0d6efd;
+  padding-left: 8px;
+  color: #0d6efd;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+}
+
+.libraryListShow {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.library-payment{
+  height: 300px;
+  overflow-y: auto;
+}
+.studyMaterialShow{
+  height: 300px;
+  overflow-y: auto;
+}
+
+.balanceFee{
+  background-color: #f78242;
+}
+.students-scroll{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.feeCard:hover {
+  transform: translateY(-4px);
+  transition: 0.2s;
+}
+
+.homeCard {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.homeCard:nth-child(1) { animation-delay: 0.1s; }
+.homeCard:nth-child(2) { animation-delay: 0.2s; }
+.homeCard:nth-child(3) { animation-delay: 0.3s; }
+.homeCard:nth-child(4) { animation-delay: 0.4s; }
+.homeCard:nth-child(5) { animation-delay: 0.5s; }
+.homeCard:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Study Material Student  */
+
+.studyMaterialScroll{
+  height: 50vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dashboardRightSection{
+  background: linear-gradient(135deg, #523557,#b458e5)
+}
+.dashboardR5ThisMonth{
+  background: linear-gradient(135deg, #73a2ed, #2563eb);
+color: white;
+}
+.dashboardR5LastMonth{
+  background: linear-gradient(135deg, #e3d084, #eab308);
+  color: #1f2937; 
+}
+.dashboardR5Year{
+  background: linear-gradient(135deg, #22c55e, #15803d);
+color: white;
+}
+.dashboardYear{
+  background: linear-gradient(135deg, #22c55e, #15803d);
+color: white;
+}
+.dashboardR4Remaining{
+  background: linear-gradient(135deg, #fb923c, #ea580c);
+  color: white;
+}
+.dashboardR4Paid{
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: white;
+}
+.dashboardStaff{
+  background: linear-gradient(135deg, #fb923c, #ea580c);
+  color: white;
+  
+}
+.dashboardStaffScroll{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* Dashboard Data */
+
+.menu-card {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Animation */
+.menu-card:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Animation */
+.menu-card:active {
+  transform: scale(0.95);
+}
+
+/* Optional Glow Effect */
+.menu-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 1050;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .seatGrid-div{
+    height: 40px;
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 1040;
+}
